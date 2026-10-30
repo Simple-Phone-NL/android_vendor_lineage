@@ -8,8 +8,8 @@ PRODUCT_PACKAGES += \
     sensitive_pn.xml
 
 # World APN list
-#PRODUCT_PACKAGES += \
-#    apns-conf.xml
+PRODUCT_PACKAGES += \
+    apns-conf.xml
 
 # Telephony packages
 PRODUCT_PACKAGES += \
@@ -25,6 +25,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
-# Disable mobile data by default
+# Enable mobile data by default
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.android.mobiledata=false
+    ro.com.android.mobiledata=true

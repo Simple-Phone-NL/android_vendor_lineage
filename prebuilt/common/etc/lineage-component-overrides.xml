@@ -14,6 +14,12 @@
      limitations under the License.
 -->
 <config>
+    <!-- Simple Phone: Trust is removed, so also hide its settings page and onboarding -->
+    <component-override package="org.lineageos.lineageparts">
+        <component class=".trust.TrustPreferences" enabled="false" />
+        <component class=".trust.TrustOnBoardingActivity" enabled="false" />
+    </component-override>
+
     <component-override package="com.android.vending">
         <component class=".systemupdateactivity.SettingsSecurityEntryPoint" enabled="false" />
         <component class=".systemupdateactivity.SystemUpdateActivity" enabled="false" />
